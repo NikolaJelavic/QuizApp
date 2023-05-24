@@ -11,7 +11,7 @@
 h1 {
   text-align: center;
   font-weight: 900;
-  font-size: 4em;
+  font-size: 5em;
   /* background-image: -webkit-linear-gradient(#9198e5, #e66465); */
   color: #9198e5;
   text-shadow: 2px 2px 4px #e66465;
@@ -27,8 +27,8 @@ main {
 section {
   /* width: 25vw;
   height: 20vh; */
-  width: 200px;
-  height: 130px;
+  width: 300px;
+  height: 200px;
   border: 2px solid rgb(128, 76, 224);
   border-radius: 10px;
   margin: 1%;
@@ -39,17 +39,17 @@ section {
 
 button {
   border: 1px solid pink;
-  width: 60px;
-  height: 50px;
+  width: 100px;
+  height: 80px;
   border-radius: 10px;
-  padding: 10px;
+  padding: 5px;
   align-self: center;
-  margin: 3px 0px;
+  margin: 35px 0px;
   background: linear-gradient(#e66465, #9198e5);
   /* color: red; */
 }
-h3 {
-  font-size: 1em;
+h2 {
+  font-size: 2em;
   text-align: center;
   margin: 10px;
   height: 20px;
@@ -67,6 +67,7 @@ div.tags {
   border: 1px solid rgb(22, 22, 22);
   border-style: hidden hidden solid solid;
   margin: 2px;
+  font-size: 1.5em;
 }
 footer {
   position: fixed;
@@ -77,7 +78,6 @@ footer {
   /* background-color: red; */
   background: linear-gradient(#e66465, #9198e5);
 }
-
 
 i {
   padding: 20px;
@@ -116,6 +116,13 @@ i {
 .aboutMe {
   width: 80%;
   margin: 3% auto;
+}
+.aboutMe h2 {
+  font-size: 3em;
+}
+.aboutMe p {
+  font-size: 1.5em;
+  padding: 1em;
 }
 
 .main {
