@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 4em;
+  /* background-image: -webkit-linear-gradient(#9198e5, #e66465); */
+  color: #9198e5;
+  text-shadow: 2px 2px 4px #e66465;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  /* align-content: start; */
+}
+
+section {
+  /* width: 25vw;
+  height: 20vh; */
+  width: 200px;
+  height: 130px;
+  border: 2px solid rgb(128, 76, 224);
+  border-radius: 10px;
+  margin: 1%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px -5px 5px rgb(128, 76, 224);
+}
+
+button {
+  border: 1px solid pink;
+  width: 60px;
+  height: 50px;
+  border-radius: 10px;
+  padding: 10px;
+  align-self: center;
+  margin: 3px 0px;
+  background: linear-gradient(#e66465, #9198e5);
+  /* color: red; */
+}
+h3 {
+  font-size: 1em;
+  text-align: center;
+  margin: 10px;
+  height: 20px;
+}
+div {
+  margin: 1px;
+}
+div.tags {
+  display: flex;
+  margin-top: 10px;
+}
+
+.tags p {
+  flex-direction: column;
+  border: 1px solid rgb(22, 22, 22);
+  border-style: hidden hidden solid solid;
+  margin: 2px;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  /* background-color: red; */
+  background: linear-gradient(#e66465, #9198e5);
+}
+
+
+i {
+  padding: 20px;
+  font-size: 2.5em;
+}
+
+.userName {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin-top: 5%;
+  -webkit-box-shadow: 7px -5px 10px 0px #4b0082, 11px -9px 10px 0px #0000ff,
+    16px -14px 10px 0px #00ff00, 20px -17px 10px 0px #ffff00,
+    24px -19px 10px 0px #ff7f00, 27px -23px 10px 0px #ff0000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 7px -5px 10px 0px #4b0082, 11px -9px 10px 0px #0000ff,
+    16px -14px 10px 0px #00ff00, 20px -17px 10px 0px #ffff00,
+    24px -19px 10px 0px #ff7f00, 27px -23px 10px 0px #ff0000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+.userName i {
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  font-size: 5em;
+  text-align: center;
+}
+
+.userName p {
+  margin: auto 0;
+  font-size: 3em;
+  font-weight: bolder;
+}
+
+.aboutMe {
+  width: 80%;
+  margin: 3% auto;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.counter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.counter div {
+  border: 2px solid black;
+  width: 100px;
+  height: 50px;
+}
+.counter i {
+  font-size: 2em;
+  padding: 0.6em;
+}
+
+.toggle {
+  border-radius: 50px;
+  height: 20px;
+  background: linear-gradient(#e66465, #9198e5);
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-top: 40px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background: linear-gradient(#e66465, #9198e5);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px linear-gradient(#e66465, #9198e5);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.settings {
+  display: flex;
+  justify-content: space-around;
+}
+
+.settings p {
+  font-size: 2em;
+  padding: 0.5em;
+}
+
+.active {
+  background: linear-gradient(#9198e5, #e66465);
+  border-radius: 50px;
+}
+
+/* section::before {
+  content: "fa-solid fa-bookmark";
+  background-color: #ffba10;
+  
+  margin-top: -10px;
+} */
+
+section i {
+  /* z-index: 0; */
+  padding: 0px;
+  margin-top: -5px;
+  text-align: end;
+}
+h3 {
+  margin-top: -10px;
+}
+
+.userName p {
+  color: #e66465;
+  text-shadow: -1px -5px black, 0 0 black, 0 0 black, 0 -1px black;
+}
