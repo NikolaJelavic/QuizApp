@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <script
+      src="https://kit.fontawesome.com/c76df951c8.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link href="/quiz.png" rel="icon" />
+
+    <title>QuizApp</title>
+  </head>
+  <body>
+    <header>
+      <h1>Quiz App</h1>
+    </header>
+
+    <form class="form">
+      <label for="question">Your question</label>
+      <textarea
+        name="question"
+        id="question"
+        cols="30"
+        rows="10"
+        maxlength="150"
+        data-js="textareaQuestion"
+      ></textarea>
+      <small class="form__character-count">
+        (<span data-js="amountLeftQuestion"></span> characters left)</small
+      >
+
+      <label for="answer">Your answer</label>
+      <textarea
+        name="answer"
+        id="answer"
+        cols="30"
+        rows="10"
+        maxlength="150"
+        data-js="textareaAnswer"
+      ></textarea>
+      <small class="form__character-count">
+        (<span data-js="amountLeftAnswer"></span> characters left)</small
+      >
+
+      <!-- <textarea
+     
+      data-js="personalMessage"
+      name="personalMessage"
+      id="personal-message"
+      
+    ></textarea>
+    <small class="form__character-count">
+      (<span data-js="amountLeft"></span> characters left)</small
+    >
+
+    <label for="answer">Your answer</label>
+    <textarea
+      name="answer"
+      id="answer"
+      data-js="textareaAnswer"
+    ></textarea>
+    <small class="form__character-count">
+      (<span data-js="amountLeftAnswer"></span> characters left)</small
+    > -->
+
+      <label for="tag">Tags</label>
+      <input type="text" name="tag" id="tag" />
+
+      <button data-js="submit">Submit</button>
+    </form>
+
+    <footer>
+      <a href="index.html">
+        <i class="fa-solid fa-house"></i>
+      </a>
+      <a href="bookmarked.html"><i class="fa-solid fa-bookmark"></i></a>
+      <a href="form.html" class="active"><i class="fa-solid fa-plus"></i></a>
+      <a href="user.html"><i class="fa-solid fa-user"></i></a>
+    </footer>
+    <script src="/index.js"></script>
+    <script src="/form.js"></script>
+  </body>
+</html>

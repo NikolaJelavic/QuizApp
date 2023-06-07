@@ -24,7 +24,7 @@ main {
   /* align-content: start; */
 }
 
-section {
+article {
   /* width: 25vw;
   height: 20vh; */
   width: 300px;
@@ -40,13 +40,14 @@ section {
 button {
   border: 1px solid pink;
   width: 100px;
-  height: 80px;
+  height: 40px;
   border-radius: 10px;
   padding: 5px;
   align-self: center;
   margin: 35px 0px;
   background: linear-gradient(#e66465, #9198e5);
   /* color: red; */
+  margin-bottom: 0;
 }
 h2 {
   font-size: 2em;
@@ -57,17 +58,19 @@ h2 {
 div {
   margin: 1px;
 }
-div.tags {
+ul.tags {
   display: flex;
   margin-top: 10px;
+  z-index: 2;
 }
 
-.tags p {
+.tags li {
   flex-direction: column;
   border: 1px solid rgb(22, 22, 22);
   border-style: hidden hidden solid solid;
   margin: 2px;
   font-size: 1.5em;
+  list-style-type: none;
 }
 footer {
   position: fixed;
@@ -151,7 +154,6 @@ i {
   height: 20px;
   background: linear-gradient(#e66465, #9198e5);
 }
-
 .switch {
   position: relative;
   display: inline-block;
@@ -233,12 +235,13 @@ input:checked + .slider:before {
   margin-top: -10px;
 } */
 
-section i {
+article i {
   /* z-index: 0; */
   padding: 0px;
   margin-top: -5px;
   text-align: end;
 }
+
 h3 {
   margin-top: -10px;
 }
@@ -247,3 +250,54 @@ h3 {
   color: #e66465;
   text-shadow: -1px -5px black, 0 0 black, 0 0 black, 0 -1px black;
 }
+
+.hidden {
+  display: none;
+  font-size: 2em;
+  text-align: center;
+}
+.card--answer {
+  font-size: 2em;
+  text-align: center;
+  z-index: 1;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+article input {
+  width: 240px;
+}
+
+textarea {
+  width: 30%;
+}
+input#tag {
+  width: 30%;
+}
+
+form label {
+  font-size: 3em;
+}
+
+.dayMode {
+  background-color: white;
+}
+.darkMode {
+  background-color: dimgrey;
+}
+
+.articleCenter {
+  margin: 2em auto;
+}
+
+.form__character-count {
+  font-size: 2em;
+}
+/* .drunkMode {
+  background-color: #00ff00;
+  animation: bounce2 3s infinite;
+} */
